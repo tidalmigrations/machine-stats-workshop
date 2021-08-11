@@ -1,0 +1,7 @@
+#!/bin/bash
+
+while :
+do
+    machine_stats hosts | tidal sync servers
+    sleep 30
+done
