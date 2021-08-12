@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Generate Machine Stats/Ansible inventory file `hosts` from the list of VMs
+
+gcloud \
+    compute instances list \
+    --format='value(networkInterfaces[].accessConfigs[0].natIP.notnull().list())' | \
+    awk '{print $0, "ansible_ssh_private_key_file=~/.ssh/google_compute_engine"}' \
+    > hosts
