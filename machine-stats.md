@@ -175,11 +175,6 @@ Here's what you can do next:
 
 * Learn more about [Tidal Migrations][tidal-migrations].
 
-[spotlight-console-menu]: walkthrough://spotlight-pointer?spotlightId=console-nav-menu
-[spotlight-create-instance]: walkthrough://spotlight-pointer?cssSelector=#_2rif_create
-[spotlight-instance-name]: walkthrough://spotlight-pointer?spotlightId=gce-vm-add-name
-[spotlight-instance-zone]: walkthrough://spotlight-pointer?spotlightId=gce-vm-add-zone-select
-[spotlight-submit-create]: walkthrough://spotlight-pointer?spotlightId=gce-submit
 [machine-stats-github]: https://github.com/tidalmigrations/machine_stats/tree/master/unix
 [machine-stats-guide]: https://guides.tidalmg.com/machine_stats.html
 [tidal-tools]: https://get.tidal.sh
