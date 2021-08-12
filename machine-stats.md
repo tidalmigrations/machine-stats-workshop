@@ -13,6 +13,12 @@ You first need to select a project to host the resources created in this tutoria
 
 <walkthrough-project-setup></walkthrough-project-setup>
 
+Let's set this project:
+
+```bash
+gcloud config set project {{project-id}}
+```
+
 ## What is Machine Stats?
 
 Before we jump in, let's briefly go over what Machine Stats can do.
@@ -42,8 +48,6 @@ machine-stats --help
 Next, you’ll create some VM instances.
 
 ## Creating VM instances
-
-<walkthrough-open-cloud-shell-button></walkthrough-open-cloud-shell-button>
 
 Let's use Google Cloud Deployment Manager to create a pool of VMs:
 
