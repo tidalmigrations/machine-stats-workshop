@@ -51,9 +51,18 @@ Next, you’ll create some VM instances.
 
 Let's use Google Cloud Deployment Manager to create a pool of VMs:
 
-```bash
-gcloud deployment-manager deployments create instance-pool --config deployment/instance-pool.yaml
-```
+1.  Enable Cloud Deployment Manager API:
+    ```bash
+    gcloud services enable deploymentmanager.googleapis.com
+    ```
+2.  Enable Compute Engine API:
+    ```bash
+    gcloud services enable compute.googleapis.com
+    ```
+3.  Create the deployment:
+    ```bash
+    gcloud deployment-manager deployments create instance-pool --config deployment/instance-pool.yaml
+    ```
 
 Next, you’ll review the list of VM instances.
 
