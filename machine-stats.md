@@ -154,6 +154,8 @@ Run the shell script as following:
 ./repeat-machine-stats
 ```
 
+The script will run sync for five times with 30 seconds interval between runs.
+
 Open your **Tidal Migrations Platform** and search for one of the hosts on the
 **Assess/Servers** page.
 

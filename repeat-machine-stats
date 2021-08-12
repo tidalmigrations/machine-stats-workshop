@@ -1,6 +1,6 @@
 #!/bin/bash
 
-while :
+for _ in {1..5}
 do
     machine_stats hosts | tidal sync servers
     sleep 30
