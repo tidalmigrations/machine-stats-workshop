@@ -27,8 +27,6 @@ Continue on to the next step to install Machine Stats.
 
 ## Installation
 
-<walkthrough-open-cloud-shell></walkthrough-open-cloud-shell>
-
 Install Machine Stats:
 
 ```bash
