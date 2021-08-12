@@ -64,6 +64,10 @@ Let's use Google Cloud Deployment Manager to create a pool of VMs:
     gcloud deployment-manager deployments create instance-pool --config deployment/instance-pool.yaml
     ```
 
+Note: After the instances are created, your billing account will start being
+charged according to the Compute Engine pricing. You will remove the instances
+later to avoid extra charges.
+
 Next, you’ll review the list of VM instances.
 
 ## Hosts
@@ -159,6 +163,47 @@ The script will run sync for five times with 30 seconds interval between runs.
 Open your **Tidal Migrations Platform** and search for one of the hosts on the
 **Assess/Servers** page.
 
+## Clean up
+
+To avoid incurring charges to your Google Cloud account for the resources used
+in this tutorial, follow this steps.
+
+```bash
+gcloud deployment-manager deployments delete instance-pool
+```
+
+Type `y` at the prompt:
+
+```terminal
+The following deployments will be deleted:
+- instance-pool
+
+Do you want to continue (y/N)?
+```
+
+The deployment and the resources you created are permanently deleted.
+
+Alternatively, you can delete your Cloud project to stop billing for all the
+resources used within that project.
+
+**Caution**: Deleting a project has the following effects:
+
+-   **Everything in the project is deleted.** If you used an existing project
+    for this tutorial, when you delete it, you also delete any other work you've
+    done in the project. 
+
+-   **Custom project IDs are lost.** When you created this project, you might have
+    created a custom project ID that you want to use in the future. To preserve
+    the URLs that use the project ID, such as an appspot.com URL, delete
+    selected resources inside the project instead of deleting the whole project.
+
+1.  In the Cloud Console, go to the [Manage resources][console-manage-resources]
+    page.
+2.  In the project list, select the project that you want to delete, and then
+    click **Delete**.
+3.  In the dialog, type the project ID, and then click **Shut down** to delete
+    the project.
+
 ## Congratulations
 
 <walkthrough-conclusion-trophy></walkthrough-conclusion-trophy> 
@@ -175,6 +220,7 @@ Here's what you can do next:
 
 * Learn more about [Tidal Migrations][tidal-migrations].
 
+[console-manage-resources]: https://console.cloud.google.com/iam-admin/projects
 [machine-stats-github]: https://github.com/tidalmigrations/machine_stats/tree/master/unix
 [machine-stats-guide]: https://guides.tidalmg.com/machine_stats.html
 [tidal-tools]: https://get.tidal.sh
