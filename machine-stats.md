@@ -13,8 +13,6 @@ You first need to select a project to host the resources created in this tutoria
 
 <walkthrough-project-setup></walkthrough-project-setup>
 
-<walkthrough-enable-apis apis="compute.googleapis.com"></walkthrough-enable-apis>
-
 ## What is Machine Stats?
 
 Before we jump in, let's briefly go over what Machine Stats can do.
