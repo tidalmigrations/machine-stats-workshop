@@ -81,8 +81,7 @@ Let's write the list of IPs alongside with SSH key locations to the
 `hosts` file:
 
 ```bash
-gcloud compute instances list --format='value(networkInterfaces[].accessConfigs[0].natIP.notnull().list())' | \
-awk '{print $0, "ansible_ssh_private_key_file=~/.ssh/google_compute_engine"}' > hosts
+./generate-hosts
 ```
 
 Next, you'll run Machine Stats with the generated inventory file.
