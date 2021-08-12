@@ -154,11 +154,6 @@ Run the shell script as following:
 ./repeat-machine-stats
 ```
 
-<walkthrough-footnote>
-The better way to run Machine Stats and Tidal Tools periodically is to use
-`cron` or systemd services and timers.
-</walkthrough-footnote>
-
 Open your **Tidal Migrations Platform** and search for one of the hosts on the
 **Assess/Servers** page.
 
