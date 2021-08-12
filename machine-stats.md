@@ -43,6 +43,8 @@ Next, you’ll create some VM instances.
 
 ## Creating VM instances
 
+<walkthrough-open-cloud-shell-button></walkthrough-open-cloud-shell-button>
+
 Let's use Google Cloud Deployment Manager to create a pool of VMs:
 
 ```bash
