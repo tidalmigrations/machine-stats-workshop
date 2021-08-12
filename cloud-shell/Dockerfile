@@ -1,8 +1,7 @@
 FROM gcr.io/cloudshell-images/cloudshell:latest
 
 # Install Ansible (and its dependencies) from Debian packages repository.
-RUN apt-get update \
- && apt-get -y install --no-install-recommends \
+RUN apt-get -y install --no-install-recommends \
     ansible \
  && rm -rf /var/lib/apt/lists/*
 
