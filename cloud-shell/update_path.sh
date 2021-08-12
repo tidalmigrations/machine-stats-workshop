@@ -1,11 +1,7 @@
 #!/bin/bash
 
 # Add ~/.local/bin to PATH
-if [[ "$PATH" =~ (^|:)"${HOME}/.local/bin"(:|$) ]]; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
+export PATH="$HOME/.local/bin:$PATH"
 
 # Add ~/bin to PATH
-if [[ "$PATH" =~ (^|:)"${HOME}/bin"(:|$) ]]; then
-    PATH="$HOME/bin:$PATH"
-fi
+export PATH="$HOME/bin:$PATH"
