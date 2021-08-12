@@ -43,30 +43,11 @@ Next, you’ll create some VM instances.
 
 ## Creating VM instances
 
-### Navigate to Compute Engine
+Let's use Google Cloud Deployment Manager to create a pool of VMs:
 
-Open the [menu][spotlight-console-menu] on the left side of the console.
-
-Then, select the **Compute Engine** section.
-
-<walkthrough-menu-navigation sectionId="COMPUTE_SECTION"></walkthrough-menu-navigation>
-
-### Create a virtual machine instance
-
-Click the [Create instance][spotlight-create-instance] button.
-
-*   Select a [name][spotlight-instance-name] and [zone][spotlight-instance-zone]
-    for this instance.
-
-*   Click the [Create][spotlight-submit-create] button to create the instance.
-
-Note: Once the instance is created your billing account will start being charged
-according to the GCE pricing. You will remove the instance later to avoid extra
-charges.
-
-### Create more VM instances
-
-You can repeat this steps to create a few more VM instances.
+```bash
+gcloud deployment-manager deployments create instance-pool --config deployment/instance-pool.yaml
+```
 
 Next, you’ll review the list of VM instances.
 
